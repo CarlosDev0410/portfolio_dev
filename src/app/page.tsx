@@ -13,7 +13,7 @@ export default function PortfolioPage() {
   const scrollToSection = useScrollToSection()
 
   return (
-    <div className="min-h-screen transition-colors duration-300 bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 dark:from-gray-900 dark:via-purple-900 dark:to-violet-900">
+    <>
       <Header onScrollToSection={scrollToSection} />
       <Hero onScrollToContact={() => scrollToSection("contact")} />
       <About />
@@ -21,6 +21,6 @@ export default function PortfolioPage() {
       <Projects />
       <Contact />
       <Footer />
-    </div>
+    </>
   )
 }
